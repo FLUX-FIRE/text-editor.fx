@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* MAIN BODY */
+#main {
+    height: 100vh;
+    width: 100vw;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-image: url(img.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.BG-wall1, .BG-wall2, .BG-wall3, .BG-wall4{
+    height: 100%;
+    width: 100%;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+.BG-wall1{
+    background-image: url(img.jpg);
+    z-index: -10;
+    position: absolute;
+    left: 0%;
+    z-index: -12;
+}
+.BG-wall2{
+    background-image: url(img5.jpeg);
+    position: absolute;
+    left: 0%;
+    z-index: -9;
+}
+.BG-wall3{
+    background-image: url(img7.jpg);
+    position: absolute;
+    left: 0%;
+    z-index: -12;
+}
+.BG-wall4{
+    background-image: url(img6.jpg);
+    position: absolute;
+    left: 0%;
+    z-index: -12;
+}
+
+
+/* MOUSE CURSOR */
+.cursor {
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    transition: all linear 0.1s;
+    mix-blend-mode: difference;
+    z-index: 9;
+    height: 30px;
+    width: 30px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(FLUX-LOGO.png);
+}
+.cursor img{
+    height: 40px;
+    width: 40px;
+    opacity: 70%;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+/* TEXT-WE ARE FLUX */
+h1 {
+    color: white;
+    font-size: 4vw;
+    font-weight: 600;
+    position: absolute;
+    animation-name: text;
+    animation-duration: 2s;
+    /* display-wrap: nowrap; */
+    
+    
+}
+
+/* .SpeechBtn{
+    color: white;
+    z-index: 3;
+    background: red;
+    position: absolute;
+    top: 60%;
+    left: 90%:
+     */
+}
+
+/* WHITE LINE */
+/* .line {
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    background: #ccd5ae;
+    top: 68%;
+} */
+
+/* ALL BUTTON BODY */
+.buttons {
+    display: flex;
+    align-items: flex-end;
+    top: 70%;
+    background: #0d1b2a;
+    width: 100vw;
+    height: 30vh;
+    overflow: hidden;
+}
+/* COLOR BUTTON */
+.color {
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    /* background: red; */
+    height: 30%;
+    margin-top: 15px;
+    margin-left: 10%;
+}
+
+/* BUTTONS */
+button {
+    height: 40px;
+    width: 150px;
+    margin: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    left: 22%;
+    position: relative;
+    top: -35%;
+}
+
+.btnBorder{
+    border: 1px solid white;
+    height: 40vh;
+    width: 100vw;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 60vh;
+    background: rgba(255, 255, 255,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+;
+    
+}
+
+/* BUTTON CHILDS */
+.crimson {
+    background: crimson;
+}
+
+.blue {
+    background: blue;
+}
+
+.yellow {
+    background: yellow;
+}
+
+   /* BOX */
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.TXT-chnge {
+    position: absolute;
+    left: 6%;
+    top: 50%;
+    color: white;
+    font-size: 20px;
+}
+
+.BG-chnge{
+    position: absolute;
+    left: 8%;
+    top: 75%;
+    color: white;
+    font-size: 20px;
+}
+
+.BG-imgs{
+    display: flex;
+    height: 8vh;
+    width: 10vh;
+    position: absolute;
+    top: 87%;
+    left: 18.5%;
+}
+
+.bg-img{
+    margin-left: 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+    transition: all ease 0.3s;
+}
+
+.bg-img:hover{
+    transform: scale(1.1);
+    border: 1px solid red;
+}
+
+
+
+.inputBox {
+    height: 20%;
+    width: 40%;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 10px;
+    color: red;
+    position: absolute;
+    top: 45%;
+    left: 19%;
+}
+
+.confirmbtn {
+    position: absolute;
+    top: 77%;
+    left: 60%;
+    background: green;
+    z-index: 2;
+    height: 55px;
+}
+
+#social{
+    /* border: 1px solid white; */
+    height: 60%;
+    width: 10%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+#YT-link, #cal-link, #fb-link, #insta-link{
+    position: absolute;
+    cursor: pointer;
+    border-radius: 15px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+}
+#YT-link{
+    margin-top: 60%;
+    height: 40px;
+}
+#fb-link{
+    margin-top: 100%;
+}
+#cal-link{
+    margin-top: 200%;
+}
+#insta-link{
+    margin-top: 150%;
+}
+ */
+
+
+
+/* @KEYFRAMES.TEXT-WE ARE FLUX */
+@keyframes text {
+    0% {
+        left: 100%;
+        color: yellow;
+    }
+    25%{
+        color: red;
+    }
+    50%{
+        color: blue;
+    }
+    75%{
+        color: crimson;
+    }
+    100% {
+        left: 40%;
+    }
+}
+
+
+@media (max-width:600px){
+    h1{
+        font-size: 12vw;
+        text-wrap: wrap;
+    }
+    .bg-img{
+        height: 6vh;
+        width: 16vw;
+        position: relative;
+        top: 68%;
+        left: -15%;
+    }
+    .BG-chnge{
+        top: 70%;
+        left: 30%;
+    }
+    .confirmbtn{
+        left: 63.3%;
+        top: 55%;
+        z-index: 2;
+        height: 6vh;
+        width: 35vw;
+    }
+    .inputBox{
+        height: 5vh;
+        width: 50vw;
+        left: 50%;
+        top: 48%
+    }
+    button{
+        height: 5vh;
+        width: 30vw;
+        top: 13%;
+        left: 20%;
+        font-size: 15px;
+    }
+    .color{
+        font-size: 15px;
+        position: absolute;
+        left: 30%;
+    }
+    #YT-link, #fb-link, #insta-link, #cal-link{
+        height: 4vh;
+        width: 10vw;
+        position: relative;
+    }
+    #YT-link{
+        position: absolute;
+        top: 7%;
+    }
+    #fb-link{
+        position: absolute;
+        top: 14%;
+    }
+    #insta-link{
+        position: absolute;
+        top: 21%;
+    }
+    #cal-link{
+        position: absolute;
+        top: 28%;
+    }
+}
